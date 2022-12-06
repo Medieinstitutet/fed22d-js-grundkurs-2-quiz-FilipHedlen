@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- TODO: glöm ej att byta språk här -->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projekt</title>
+    <title>Filips fantastic martial arts quiz</title>
   </head>
   <body>
     <main>
-      <div class="app" id="app"></div> <!-- TODO: går bra att radera -->
-      <!-- TODO: skriv din kod här, innan script-taggen -->
+      <h1>The only martial arts quiz you will ever need</h1>
+  <div class="gameDescription"></div>
+
+  <div id="playerDetails">
+    <label>
+      What is your name? <input type="text" id="playerInput" value=''>
+    </label><br>
+    <button id="startBoxingBtn">Start Boxing Quiz</button>
+    <button id="startMtBtn">Start Muay Thai Quiz</button>
+    <button id="startMmaBtn">Start MMA Quiz</button>
+  </div>
+
+  <div id="boxingQuestionContainer">
+    <div id="questionText"></div>
+    <button id="answer1"></button>
+    <button id="answer2"></button>
+    <button id="answer3"></button>
+  </div>
+
+  <div id="muayThaiQuestionContainer">
+    <div id="questionText"></div>
+    <button id="answer1"></button>
+    <button id="answer2"></button>
+    <button id="answer3"></button>
+  </div>
+
+  <div id="mmaQuestionContainer">
+    <div id="questionText"></div>
+    <button id="answer1"></button>
+    <button id="answer2"></button>
+    <button id="answer3"></button>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    Game over!
+    <p id="pointsContainer"></p>
+    <span>
+      <button id="restartBtn">Play again!</button>
+      <button id="startDifferentQuiz">Choose another quiz!</button>
+    </span>
+  </div>
+
     </main>
 
     <!-- TODO
@@ -17,6 +57,6 @@
     - Kontrollera tillgänglighet: https://www.a11yproject.com/checklist/ & Chrome Lighthouse/Firefox Accessibility Tools
     - Validera genererade CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
     -->
-    <script type="module" src="/src/main.ts"></script>
+    <script type="js" src="/src/main.js"></script>
   </body>
 </html>
