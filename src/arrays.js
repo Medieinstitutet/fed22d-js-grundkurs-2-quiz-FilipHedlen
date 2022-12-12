@@ -12,7 +12,7 @@ const boxingQuestions = [
   {
     questionText: 'When does a boxer become undisputed champion in his/her weightclass?',
     answerOptions: [
-      'When she/he has aquired 50 wins in their weightclass',
+      'When she/he has aquired 50 wins in their respective weightclass',
       'When she/he has aquired the IBF, WBO, WBA and WBC belts',
       'When she/he has aquired the IBF, WBO, WBA, WBC and WTT belts',
     ],
@@ -116,6 +116,6 @@ const mmaQuestions = [
       'Anderson Silva, middleweight, light heavyweight: 2006 - 2013',
       'Demetrious Johnson, flyweight: 2012 - 2018',
     ],
-    correctAnswer: 'Anderson Silva, middleweight, light heavyweight: 2006 - 2013'
+    correctAnswer: 'Anderson Silva, middleweight, light heavyweight: 2006 - 2013',
   },
 ];

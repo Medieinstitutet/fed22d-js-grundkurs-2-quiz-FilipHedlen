@@ -66,7 +66,7 @@ function checkAnswer(e) {
 }
 
 function nextQuestion() {
-  if (currentQuestion >= questions.length) { // > =
+  if (currentQuestion >= questions.length) { // If there is no more questions - game over
     gameOver();
     return;
   }
@@ -103,4 +103,10 @@ function gameOver() {
   document.querySelector('#questionContainer').classList.add('hidden');
   document.querySelector('#pointsContainer').innerHTML = `Du fick ${points} poäng!`;
 }
+
+
+localStorage.setItem('Players', 
+ JSON.stringify({playerName, pointsContainer})
+); // Lägga till spelare + spelares poäng i highscore/localstorage
+
 

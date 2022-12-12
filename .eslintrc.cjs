@@ -1,4 +1,5 @@
 module.exports = {
+  linebreak: ['error', 'windows'],
   env: {
     browser: true,
     es2021: true
