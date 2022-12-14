@@ -1,21 +1,29 @@
 @use "utils/a11y"; // Om det inte funkar, byt @use mot @import
 @use "vendor/reset";
 
-html, body {
-  background-color: yellow;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightblue;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-};
+  box-sizing: border-box;
+}
 
-#bxng-q-container,
-#mt-q-container,
-#mma-q-container {
+h1 {
+  text-align: center;
+}
+
+.bxng-q-container,
+.mt-q-container,
+.mma-q-container {
   background-color: yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-};
+}
 
 
   

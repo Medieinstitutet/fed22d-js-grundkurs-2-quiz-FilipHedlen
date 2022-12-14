@@ -23,18 +23,18 @@ function startGame() {
   gameDescription.style.display = 'none'; // Hide HTML-elements
   document.querySelector('#playerDetails').style.display = 'none'; // Hide HTML-elements
 
-  if (startBoxingBtn === 'clicked') { // Pair boxingquiz button with boxing quiz
+  if (startbxngbtn === 'click') { // Pair boxingquiz button with boxing quiz
     boxingQuiz.startGame; // Start boxing quiz
-    document.querySelector('#startMtBtn').style.display = 'none'; // Hide muay thai quiz button when selected
-    document.querySelector('#startMmaBtn').style.display = 'none'; // Hide mma quiz button when selected
-  } else if (startMtBtn === 'clicked') { // Pair muay thai quiz button with muay thai quiz
+    document.querySelector('#startmtbtn').style.display = 'none'; // Hide muay thai quiz button when selected
+    document.querySelector('#startmmabtn').style.display = 'none'; // Hide mma quiz button when selected
+  } else if (startmtbtn === 'click') { // Pair muay thai quiz button with muay thai quiz
     muayThaiQuiz.startGame; // Start muay thai quiz
-    document.querySelector('#startBoxingBtn').style.display = 'none'; // Hide boxing quiz button when selected
-    document.querySelector('#startMmaBtn').style.display = 'none'; // Hide mma quiz button when selected
-  } else if (startMmaBtn === 'clicked') { // Pair mma quiz button with mma quiz
+    document.querySelector('#startbxngbtn').style.display = 'none'; // Hide boxing quiz button when selected
+    document.querySelector('#startmmabtn').style.display = 'none'; // Hide mma quiz button when selected
+  } else if (startmmabtn === 'click') { // Pair mma quiz button with mma quiz
     mmaQuiz.startGame; // Start mma quiz
-    document.querySelector('#startBoxingBtn').style.display = 'none'; // Hide boxing quiz button when selected
-    document.querySelector('#startMtBtn').style.display = 'none'; // Hide muay thai quiz button when selected
+    document.querySelector('#startbxngbtn').style.display = 'none'; // Hide boxing quiz button when selected
+    document.querySelector('#startmtbtn').style.display = 'none'; // Hide muay thai quiz button when selected
   };
 
   nextQuestion();
@@ -60,7 +60,7 @@ function checkAnswer(e) {
   if (userAnswer === correctAnswer) { // Compare the players answer to correct answer
     points++; // 1 point given
   } else {
-    points -1; // 1 point deducted
+    points -=1; // 1 point deducted
   }
   nextQuestion();
 }
@@ -103,10 +103,5 @@ function gameOver() {
   document.querySelector('#questionContainer').classList.add('hidden');
   document.querySelector('#pointsContainer').innerHTML = `Du fick ${points} poäng!`;
 }
-
-
-localStorage.setItem('Players', 
- JSON.stringify({playerName, pointsContainer})
-); // Lägga till spelare + spelares poäng i highscore/localstorage
 
 

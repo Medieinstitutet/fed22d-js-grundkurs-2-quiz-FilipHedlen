@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filips fantastic martial arts quiz</title>
     <meta name="description" content="Front-end student Filip Hedlén at Medieinstitutets quiz about martial arts">
-    <link rel="stylesheet" href="src/style/style.scss" type="text/css">
   </head>
   <body>
     <main>
@@ -17,29 +16,29 @@
     <label>
       What is your name? <input type="text" id="playerInput" value=''>
     </label><br>
-    <button id="startBoxingBtn">Start Boxing Quiz</button>
-    <button id="startMtBtn">Start Muay Thai Quiz</button>
-    <button id="startMmaBtn">Start MMA Quiz</button>
+    <button id="startbxngbtn" class="startbxngbtn">Start Boxing Quiz</button>
+    <button id="startmtbtn">Start Muay Thai Quiz</button>
+    <button id="startmmabtn">Start MMA Quiz</button>
   </div>
 
-  <a class="high-score-board" href="/highscores.html">High Scores</a>
+  <a class="high-score-board" href="/js-template/highscores.html">High Score Board</a>
 
-  <div id="bxng-q-container">
-    <div id="bxng-q-txt"></div>
+  <div id="bxng-q-container" class="bxng-q-container">
+    <div id="bxngQTxt" class="bxng-q-txt"></div>
     <button id="bxng-answer1"></button>
     <button id="bxng-answer2"></button>
     <button id="bxng-answer3"></button>
   </div>
 
-  <div id="mt-q-container">
-    <div id="mtQTxt"></div>
+  <div id="mt-q-container" class="mt-q-container">
+    <div id="mtQTxt" class="mt-q-txt"></div>
     <button id="mt-answer1"></button>
     <button id="mt-answer2"></button>
     <button id="mt-answer3"></button>
   </div>
 
-  <div id="mma-q-container">
-    <div id="mmaQTxt"></div>
+  <div id="mma-q-container" class="mma-q-container">
+    <div id="mmaQTxt" class="mma-q-txt"></div>
     <button id="mma-answer1"></button>
     <button id="mma-answer2"></button>
     <button id="mma-answer3"></button>
@@ -55,12 +54,6 @@
   </div>
 
     </main>
-
-    <!-- TODO
-    - Validera HTML (kopiera den renderade HTML-koden): https://validator.w3.org/#validate_by_input
-    - Kontrollera tillgänglighet: https://www.a11yproject.com/checklist/ & Chrome Lighthouse/Firefox Accessibility Tools
-    - Validera genererade CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
-    -->
     <script type="js" src="/src/main.js"></script>
   </body>
 </html>
