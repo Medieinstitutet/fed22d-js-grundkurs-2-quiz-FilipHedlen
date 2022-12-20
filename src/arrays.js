@@ -1,6 +1,7 @@
 
-const boxingQuestions = [
+export const questions = [
   {
+    category: 'Boxing',
     questionText: 'What is by far the most utilized punch in boxing?',
     answerOptions: [
       'The cross',
@@ -10,6 +11,7 @@ const boxingQuestions = [
     correctAnswer: 'The jab',
   },
   {
+    category: 'Boxing',
     questionText: 'When does a boxer become undisputed champion in his/her weightclass?',
     answerOptions: [
       'When she/he has aquired 50 wins in their respective weightclass',
@@ -19,6 +21,7 @@ const boxingQuestions = [
     correctAnswer: 'When she/he has aquired the IBF, WBO, WBA and WBC belts',
   },
   {
+    category: 'Boxing',
     questionText: 'What did former champion Vasyl Lomatjenkos dad make him do for 4 years before he could start training boxing?',
     answerOptions: [
       'Swimming, to give him an advantage in back strength, core strength and endurance',
@@ -28,6 +31,7 @@ const boxingQuestions = [
     correctAnswer: 'Ukranian folk dance, to give him an advantage in his footwork',
   },
   {
+    category: 'Boxing',
     questionText: 'Which two of these boxers were heavyweight champions of the world at one point in their career?',
     answerOptions: [
       'Muhammad Ali',
@@ -37,10 +41,8 @@ const boxingQuestions = [
     correctAnswer: 'Muhammad Ali',
     correctAnswer: 'Michael Bentt',
   },
-];
-
-const muayThaiQuestions = [
   {
+    category: 'Muay thai',
     questionText: 'What preferred offense does a "Muay khao" fighter use?',
     answerOptions: [
       'His/her knees',
@@ -50,6 +52,7 @@ const muayThaiQuestions = [
     correctAnswer: 'His/her knees',
   },
   {
+    category: 'Muay thai',
     questionText: 'Who is the only muay thai boxer who has won "Sports Writers of Thailand Fighter of the Year" three years in a row?',
     answerOptions: [
       'Samart Payakaroon, 1981 - 1983',
@@ -59,6 +62,7 @@ const muayThaiQuestions = [
     correctAnswer: 'Panpayak Jitmuangnon, 2013-2015',
   },
   {
+    category: 'Muay thai',
     questionText: 'What two stadiums in Thailand is historically held with the highest regard when it comes to professional muay thai?',
     answerOptions: [
       'Rajadamnern stadium in Bangkok',
@@ -69,6 +73,7 @@ const muayThaiQuestions = [
     correctAnswer: 'Lumpinee stadium in Bangkok',
   },
   {
+    category: 'Muay thai',
     questionText: 'What is a "Wai khru ram muay" and what does it represent?',
     answerOptions: [
       'An armband which is worn throughout the fight which honors your respective gym and khru (trainer)',
@@ -77,10 +82,8 @@ const muayThaiQuestions = [
     ],
     correctAnswer: 'A ritualistic dance which is performed before a fight to show respect and gratitude to the parents, khrus (trainers), ancestors and the ring itself',
   },
-];
-
-const mmaQuestions = [
   {
+    category: 'MMA',
     questionText: 'In what two weightclasses was irish MMA fighter Conor McGregor simultaneously champion of in the UFC?',
     answerOptions: [
       'Featherweight',
@@ -91,6 +94,7 @@ const mmaQuestions = [
     correctAnswer: 'Featherweight',
   },
   {
+    category: 'MMA',
     questionText: 'Several high ranked MMA fighters and champions descend from which well-known wrestling optimistic russian republic?',
     answerOptions: [
       'Chechen Republic',
@@ -100,6 +104,7 @@ const mmaQuestions = [
     correctAnswer: 'Republic of Dagestan',
   },
   {
+    category: 'MMA',
     questionText: 'Besides the UFC (Ultimate Fighting Championship), name two other well-known MMA organisations around the world',
     answerOptions : [
       'Bellator MMA',
@@ -110,6 +115,7 @@ const mmaQuestions = [
     correctAnswer: 'Cage Warriors',
   },
   {
+    category: 'MMA',
     questionText: 'Which fighter and champion has held the longest winningstreak ever in the UFC (Ultimate Fighting Championship)?',
     answerOptions: [
       'Tony Ferguson, lightweight: 2013 - 2020',

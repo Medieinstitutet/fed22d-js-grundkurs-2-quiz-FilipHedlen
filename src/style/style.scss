@@ -7,8 +7,6 @@ html {
 
 body {
   background-color: lightblue;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,14 +14,99 @@ h1 {
   text-align: center;
 }
 
-.bxng-q-container,
-.mt-q-container,
-.mma-q-container {
-  background-color: yellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.game-description {
+  text-align: center;
+  
 }
 
 
+.playerdetails {
+  text-align: center;
+}
+
+.highscoreboard {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.questioncontainer,
+.hidden {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
+.startgamebtn {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  touch-action: manipulation;
+  width: auto;
+}
+
+.startgamebtn:hover,
+{
+  background-color: #374151;
+}
+
+.startgamebtn:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
   
+
+
+.dropbtn {
+  background-color: #6B7280;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}

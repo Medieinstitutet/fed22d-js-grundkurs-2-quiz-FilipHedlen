@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <link rel="icon" type="image/ico" href="/favicon1.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filips fantastic martial arts quiz</title>
     <meta name="description" content="Front-end student Filip Hedlén at Medieinstitutets quiz about martial arts">
@@ -10,50 +10,43 @@
   <body>
     <main>
       <h1>The only martial arts quiz you will ever need</h1>
-  <div class="gameDescription"></div>
+  <div id="gameDescription" class="game-description"></div>
 
-  <div id="playerDetails">
+  <div id="playerDetails" class="playerdetails">
     <label>
-      What is your name? <input type="text" id="playerInput" value=''>
+      What is your name? <br> <input type="text" id="playerInput" value=''>
     </label><br>
-    <button id="startbxngbtn" class="startbxngbtn">Start Boxing Quiz</button>
-    <button id="startmtbtn">Start Muay Thai Quiz</button>
-    <button id="startmmabtn">Start MMA Quiz</button>
+    <div id="quizCategories" class="quizcategories">
+      <input type="radio" id="boxing" name="category" value="Boxing">
+       <label for="boxing">Boxing</label>
+      <input type="radio" id="muaythai" name="category" value="Muay thai">
+       <label for="muaythai">Muay thai</label>
+      <input type="radio" id="mma" name="category" value="MMA">
+       <label for="mma">MMA</label>
+    </div>
+    <button id="startGameBtn" class="startgamebtn">Start Quiz</button>
   </div>
 
-  <a class="high-score-board" href="/js-template/highscores.html">High Score Board</a>
+  <a class="highscoreboard" href="/js-template/highscores.html">High Score Board</a>
 
-  <div id="bxng-q-container" class="bxng-q-container">
-    <div id="bxngQTxt" class="bxng-q-txt"></div>
-    <button id="bxng-answer1"></button>
-    <button id="bxng-answer2"></button>
-    <button id="bxng-answer3"></button>
+  <div id="questionContainer" class="questioncontainer">
+    <div id="questionText" class="questiontext"></div>
+    <button id="answer1"></button>
+    <button id="answer2"></button>
+    <button id="answer3"></button>
   </div>
 
-  <div id="mt-q-container" class="mt-q-container">
-    <div id="mtQTxt" class="mt-q-txt"></div>
-    <button id="mt-answer1"></button>
-    <button id="mt-answer2"></button>
-    <button id="mt-answer3"></button>
-  </div>
-
-  <div id="mma-q-container" class="mma-q-container">
-    <div id="mmaQTxt" class="mma-q-txt"></div>
-    <button id="mma-answer1"></button>
-    <button id="mma-answer2"></button>
-    <button id="mma-answer3"></button>
-  </div>
 
   <div id="gameOver" class="hidden">
     Game over!
     <p id="pointsContainer"></p>
     <span>
       <button id="restartBtn">Play again!</button>
-      <button id="startDifferentQuiz">Choose another quiz!</button>
     </span>
   </div>
 
     </main>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/arrays.js"></script>
   </body>
 </html>
