@@ -12,36 +12,64 @@ body {
 
 h1 {
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size:xx-large;
+  padding:5rem;
+}
+
+p {
+  font-family: 'Prosto One', cursive;
+}
+
+.questiontext {
+  font-size:x-large;
+  font-weight: bold;
+  text-decoration: underline;
+  margin:2rem;
+}
+
+.answerlabel1,
+.answerlabel2,
+.answerlabel3 {
+  font-size: x-large;
 }
 
 .game-description {
   text-align: center;
-  
+  margin: 2rem;
+  font-family: 'Prosto One', cursive;
+  font-weight: bold;
 }
 
 
 .playerdetails {
   text-align: center;
+  margin: 1rem;
+  font-family: 'Prosto One', cursive;
+  font-weight: bold;
 }
 
-.highscoreboard {
-  display: flex;
-  justify-content: center;
-}
 
-.hidden {
+.gameover {
   display: none;
 }
+
+.nextquestionbtn {
+  display: none;
+}
+
 
 .questioncontainer,
 .hidden {
   font-style: italic;
   font-weight: bold;
   text-align: center;
-  margin: 20px;
+  margin: 2rem;
+  padding: 2rem;
 }
 
-.startgamebtn {
+.startgamebtn,
+.restartbtn {
   background-color: #111827;
   border: 1px solid transparent;
   border-radius: .75rem;
@@ -52,7 +80,8 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.2rem;
+  margin: 2rem;
   text-align: center;
   text-decoration: none #6B7280 solid;
   transition-duration: .2s;
@@ -63,50 +92,15 @@ h1 {
 }
 
 .startgamebtn:hover,
-{
+.restartbtn:hover {
   background-color: #374151;
 }
 
-.startgamebtn:focus {
+.startgamebtn:focus,
+.restartbtn:focus {
   box-shadow: none;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
   
 
-
-.dropbtn {
-  background-color: #6B7280;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}

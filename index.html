@@ -3,45 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/ico" href="/favicon1.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Prosto+One&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filips fantastic martial arts quiz</title>
     <meta name="description" content="Front-end student Filip Hedlén at Medieinstitutets quiz about martial arts">
   </head>
   <body>
     <main>
-      <h1>The only martial arts quiz you will ever need</h1>
+      <h1>Test your knowledge on boxing, muay thai and MMA!</h1>
   <div id="gameDescription" class="game-description"></div>
 
   <div id="playerDetails" class="playerdetails">
     <label>
-      What is your name? <br> <input type="text" id="playerInput" value=''>
+      What is your name? <br> <input type="text" id="playerInput" value='' tabindex="1">
     </label><br>
-    <div id="quizCategories" class="quizcategories">
-      <input type="radio" id="boxing" name="category" value="Boxing">
-       <label for="boxing">Boxing</label>
-      <input type="radio" id="muaythai" name="category" value="Muay thai">
-       <label for="muaythai">Muay thai</label>
-      <input type="radio" id="mma" name="category" value="MMA">
-       <label for="mma">MMA</label>
-    </div>
-    <button id="startGameBtn" class="startgamebtn">Start Quiz</button>
+    <button id="startGameBtn" class="startgamebtn" tabindex="2">Start Quiz</button>
   </div>
 
-  <a class="highscoreboard" href="/js-template/highscores.html">High Score Board</a>
 
   <div id="questionContainer" class="questioncontainer">
     <div id="questionText" class="questiontext"></div>
-    <button id="answer1"></button>
-    <button id="answer2"></button>
-    <button id="answer3"></button>
+    <input type="radio" id="answer1" name="answers" class="answer-radio" tabindex="3">
+    <label for="answer1" class="answerlabel1"></label><br>
+    <input type="radio" id="answer2" name="answers" class="answer-radio" tabindex="4">
+    <label for="answer2" class="answerlabel2"></label><br>
+    <input type="radio" id="answer3" name="answers" class="answer-radio" tabindex="5">
+    <label for="answer3" class="answerlabel3"></label><br>
+    <button id="nextQuestionBtn" class="nextquestionbtn" tabindex="6">Next question</button>
   </div>
 
 
-  <div id="gameOver" class="hidden">
-    Game over!
+  <div id="gameOver" class="gameover">
+    Game over, I hope you enjoyed!
     <p id="pointsContainer"></p>
     <span>
-      <button id="restartBtn">Play again!</button>
+      <button id="restartBtn" class="restartbtn" tabindex="7">Play again!</button>
     </span>
   </div>
 
