@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- TODO: glöm ej att byta språk här -->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico" href="/js-template/favicon.ico" />
+    <link rel="icon" type="image/ico" href="/fed22d-js-grundkurs-2-quiz-FilipHedlen/favicon1.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Prosto+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projekt</title>
-    <script type="module" crossorigin src="/js-template/assets/index.288365a0.js"></script>
-    <link rel="stylesheet" href="/js-template/assets/index.09951560.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filips fantastic martial arts quiz</title>
+    <meta name="description" content="Front-end student Filip Hedlén at Medieinstitutets quiz about martial arts">
+    <script type="module" crossorigin src="/fed22d-js-grundkurs-2-quiz-FilipHedlen/assets/index.fb31246f.js"></script>
+    <link rel="stylesheet" href="/fed22d-js-grundkurs-2-quiz-FilipHedlen/assets/index.16e80758.css">
   </head>
   <body>
     <main>
-      <div class="app" id="app"></div> <!-- TODO: går bra att radera -->
-      <!-- TODO: skriv din kod här, innan script-taggen -->
-    </main>
+      <h1>Test your knowledge on boxing, muay thai and MMA!</h1>
+  <div id="gameDescription" class="game-description"></div>
 
-    <!-- TODO
-    - Validera HTML (kopiera den renderade HTML-koden): https://validator.w3.org/#validate_by_input
-    - Kontrollera tillgänglighet: https://www.a11yproject.com/checklist/ & Chrome Lighthouse/Firefox Accessibility Tools
-    - Validera genererade CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
-    -->
+  <div id="playerDetails" class="playerdetails">
+    <label>
+      What is your name? <br> <input type="text" id="playerInput" value='' tabindex="1">
+    </label><br>
+    <button id="startGameBtn" class="startgamebtn" tabindex="2">Start Quiz</button>
+  </div>
+
+
+  <div id="questionContainer" class="questioncontainer">
+    <div id="questionText" class="questiontext"></div>
+    <input type="radio" id="answer1" name="answers" class="answer-radio" tabindex="3">
+    <label for="answer1" class="answerlabel1"></label><br>
+    <input type="radio" id="answer2" name="answers" class="answer-radio" tabindex="4">
+    <label for="answer2" class="answerlabel2"></label><br>
+    <input type="radio" id="answer3" name="answers" class="answer-radio" tabindex="5">
+    <label for="answer3" class="answerlabel3"></label><br>
+    <button id="nextQuestionBtn" class="nextquestionbtn" tabindex="6">Next question</button>
+  </div>
+
+
+  <div id="gameOver" class="gameover">
+    Game over, I hope you enjoyed!
+    <p id="pointsContainer"></p>
+    <span>
+      <button id="restartBtn" class="restartbtn" tabindex="7">Play again!</button>
+    </span>
+  </div>
+
+    </main>
+    
     
   </body>
 </html>
